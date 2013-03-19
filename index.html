@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Explore It! - New testing approach</title>
+
+		<meta name="description" content="New methods of doing Exploratory Testing">
+		<meta name="author" content="Ramona Suciu">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+        
+        <style type="text/css">
+            .noborder {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important;
+            }
+            
+            .right-align {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important; float: right !important;
+            }
+            
+            .left-align {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important; float: left !important;
+            }
+            
+            .text-right-align {text-align:right; !important}
+            
+            .text-center-align {text-align:center; !important}
+            
+            .text-colored {text-align:center; !important; color:#086A87; !important}
+            
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Explore It!</h1>
+					<h3>Exploratory Testing methods</h3>
+                    
+                    <p class="text-center-align"><i><a href="http://testobsessed.com/">Elisabeth Hendrickson</a></i></p>
+					<br />
+						<p class="text-right-align"><small>Created by <a href="http://www.linkedin.com/profile/view?id=57366724&trk=tab_pro">Ramona Suciu</a></small></p>
+					
+				</section>
+
+				<section>
+                    <section data-state="blackout">
+                        <h2>What does testing mean?</h2>
+                        <p>
+                            There are  two sides of testing: checking and exploring.
+                            A comprehensive test strategy involves both approaches.
+                        </p>
+                    </section>
+                    
+                  <section data-state="blackout">
+                    <h2>Exploratory? What's that?</h2>
+                        <br />
+                        <q cite>
+                            A style of software testing that emphasizes the personal freedom and responsibility of the individual tester to continually optimize the quality of his/her work...
+                           <br />
+                        </q>
+                        <p class="text-right-align">Cem Kaner</p>
+                  </section>
+                  
+                  <section data-state="soothe">
+                    <h2>Context Driven Testing</h2>
+                        <p>As a strong supporter of the <a href="http://context-driven-testing.com/">Context Driven Testing School</a>, I had to include here this principle...</p>
+                        <br />
+                        <p class="text-colored"><i><strong>There are good practices in context, but there are no best practices!</strong></i><p>
+                  
+                      
+                  </section>
+                 </section>
+                  
+                  
+                 
+                    
+                <section>
+					<h2>Elements of Exploratory Testing</h2>
+					<ol>
+						<li>Designing Tests</li>
+						<li>Executing</li>
+						<li>Learning</li>
+                        <li>Steering</li>
+					</ol>
+				</section>
+
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+                        <h2>Time-Boxed Sessions</h2>
+                            <ol>
+                                <li>Structured time-boxed sessions</li>
+                                <li>Focus established in advance</li>
+                                <li>Notes taken during time-boxed sessions</li>
+                                <li>Information is shared</li>
+                            </ol>
+                     </section>
+                         
+					</section>
+                    
+					<section>
+						<h2>First practical example</h2>
+						<p>Answer these:</p>
+                        <ul>
+                            <li><i>Can the user use the website in any circumstances:</i>
+                               <ul>
+                                <li>any browser/OS configuration</li>
+                                <li>unreliable network</li>
+                                <li>little to no memory available</li>
+                                <li>different add-ons for your browser</li>
+                               </ul>
+                            </li>
+                            <br />
+                            <li>Does my test strategy cover these cases?</li>
+                         </ul>
+                        </section>
+                    
+                    
+					<section>
+                        <section data-state="blackout">
+                            <h2>Charter your explorations</h2>
+                                <p>Use exploratory testing as a means to explore a new territory.</p>
+                                <p>Use charters as your map.</p>
+                                <br />
+                                <p><i>If the map and the territory differ, believe the territory!</i></p>
+                        </section>
+                
+                        <section data-state="blackout">
+                            <h2>Charter your explorations</h2>
+                                <p>A charter template you could use</p>
+                                <br />
+                                <img class="noborder" width="400" height="400" src="images/template.png">
+                        </section>
+                    
+
+                    <section data-state="blackout">
+                        <h2>Charts - Practical example</h2>
+                        <p>How would charts look like for a project involving security concerns?</p>
+                        <br />
+                        <p>This <i>imaginary</i> product allows the user to update their public profiles with personal information.</p>
+				</section>
+
+				<section data-state="blackout">
+					<h2>Charts - Security concerns</h2>
+                        <img class="left-align" width="400" height="400" src="images/security1.png">
+                        <img class="right-align" width="400" height="400" src="images/security2.png">
+				</section>
+
+				<section data-state="blackout">
+					<h2>Bad chart example</h2>
+                        <p>These are examples of charts that are either too broad or too specific.</p>
+                        <img class="left-align" width="400" src="images/too_broad.png">
+                        <img class="right-align" width="400" src="images/too_specific.png">
+				</section>
+                
+                <section data-state="soothe">
+                    <h2>...and here's a good chart<h2>
+                        <img class="noborder" width="600" src="images/good_charts.png">
+                </section>
+             </section>
+
+             
+             <section>
+                <h2>Generate Charters</h2>
+                    <ul>
+                        <li>Requirements discussions</li>
+                        <li>Implicit Expectations</li>
+                        <li>Asking stakeholders about your charters' ideas</li>
+                        <li>Existing artifacts</li>
+                        <li>New realizations and discoveries</li>
+                     </ul>
+             </section>
+             
+             <section>
+                <section data-state="blackout">
+                    <h2>Diagram the ecosystem</h2>
+                        <p>Your web app</p>
+                        <img class="noborder" width="700" height="500" src="images/diagram1.png">
+                 </section>
+                 
+                 <section data-state="blackout">
+                    <h2>Diagram the ecosystem</h2>
+                        <p>Indicate the users of the system</p>
+                        <img class="noborder" width="650" height="500" src="images/diagram2.png">
+                 </section>
+                 
+                 <section data-state="blackout">
+                    <h2>Diagram the ecosystem</h2>
+                        <p>Map external dependencies</p>
+                        <img class="noborder" width="650" height="500" src="images/diagram3.png">
+                 </section>
+                 
+                 <section data-state="soothe">
+                    <h2>Diagram the ecosystem</h2>
+                        <p>Fill in the internals</p>
+                            <img class="noborder" width="600" height="550" src="images/diagram4.png">
+                 </section>
+             </section>
+                
+
+				<section>
+					<section>
+						<h2>What If... Game</h2>
+						<p>Gather the team and ask yourselves</p>
+						<p class="fragment">... what if ...</p>
+						<ol>
+							<li class="fragment"><strong>the connection between these two components goes down</strong></li>
+							<li class="fragment"><strong>network connection is unreliable</strong></li>
+							<li class="fragment"><strong>screen resolution is modified</strong></li>
+                            <li class="fragment"><strong>third-party service is not responding</strong></li>
+                            <li class="fragment"><strong>too many add-ons are installed</strong></li>
+                            <li class="fragment"><strong>multiple tabs are opened</strong></li>
+						</ol>
+                     </section>
+                 </section>
+                     
+                <section>
+                    <h2>Apply the above methods for...</h2>
+                    <ul>
+                        <li>Link validation</li>
+                        <li>Crossbrowser compatibility</li>
+                        <li>Web page speed</li>
+                        <li><i>Listen</i> to audio/video content with the volume turned down</li>
+                        <li>Social integration</li>
+                 </section>
+                     
+				<section>
+					<h1>There are other exploratory methods as well...</h1>
+					
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
